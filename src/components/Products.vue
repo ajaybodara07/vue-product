@@ -26,7 +26,6 @@
         </form>
       </div>
     </div>
-
     <div class="card mt-5">
       <div class="card-header">
         Product List
@@ -76,7 +75,6 @@
                     {{product.product_price}}
                   </td>
                   <td>
-
                     <a href="#" class="icon">
                       <i v-on:click="onDelete(product.id)" class="fa fa-trash"></i>
                     </a>
@@ -95,7 +93,6 @@
                   </td>
                 </template>
               </tr>
-
             </tbody>
           </table>
         </div>
@@ -157,6 +154,7 @@ export default {
         //   productsArray[key].id = querySnapshot.docs[key].id
         //   products.push(productsArray[key])
         // }
+
         this.products = products
       })
     },
@@ -165,7 +163,6 @@ export default {
       this.productData.product_id = ''
       this.productData.product_name = ''
       this.productData.product_price = ''
-
     },
     // onDelete(product_id){
     //   db.collection('products').where('product_id', '==', product_id).get().then(querySnapshot =>{

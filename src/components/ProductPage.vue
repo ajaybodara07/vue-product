@@ -58,7 +58,6 @@ export default {
 	    }
 	}).catch(function(error) {
 			console.log("Error getting document:", error);
-			console.log("profuct error:", error);
 	});
 
   }
